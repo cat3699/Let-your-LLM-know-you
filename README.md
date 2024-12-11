@@ -8,9 +8,9 @@ The system works by utilizing several key components:
 
 ### User Database:
 A database containing the user's contact list, the familiarity level with each contact, and the tone the user typically uses when addressing each individual.
-### Few-Shot Example Generation:
+### Few-Shot Example Generation :
 To ensure the LLM can replicate the user's style accurately, three separate databases are used to retrieve relevant few-shot examples:
-#### Past Messages Database: Contains previous messages sent by the user to their contacts, along with annotations about the tone used in each message (e.g., formal, casual, friendly).
+*Past Messages Database*: Contains previous messages sent by the user to their contacts, along with annotations about the tone used in each message (e.g., formal, casual, friendly).
 #### Personal Habits and Hobbies Database: A collection of responses provided by the user to prompts designed to uncover their daily habits, hobbies, and general preferences.
 #### 36 Questions to Fall in Love Database: A set of answers from the user to the "36 Questions to Fall in Love," which reveals deeper insights into their values, principles, and emotional responses.
 
