@@ -6,8 +6,9 @@ This project utilizes a large language model (LLM), in this case llama3.2 from o
 ## Approach
 The system works by utilizing several key components:
 
-### User Database:
-A database containing the user's contact list, the familiarity level with each contact, and the tone the user typically uses when addressing each individual.
+### User Database Integration in Prompt Template:
+This part of the prompt template contains a database with the user's contact list, the familiarity level with each contact, and the tone the user typically uses when addressing each individual.
+
 ### Few-Shot Example Generation :
 To ensure the LLM can replicate the user's style accurately, three separate databases are used to retrieve relevant few-shot examples:
 
@@ -17,7 +18,8 @@ To ensure the LLM can replicate the user's style accurately, three separate data
 
 ### Similarity Search:
 The system performs similarity searches within these three databases to identify the most relevant examples for the current message context. These examples are then used as few-shot examples to guide the LLM in crafting the response.
-### How It Works
+
+## How It Works
 When a message is received, the system analyzes the content and searches the relevant databases for examples that match the context and tone of the message, as well as the information present in the database about the person sending the message.
 This information is them provided to the LLM, which uses them to generate a response that reflects the user’s communication style, habits, and personal values.
 
