@@ -1,7 +1,7 @@
 # Let-your-LLM-know-you
 
 ## Project Overview
-This project utilizes a large language model (LLM), in this case llama3.2 from ollama, to respond to messages that a user receives, mimicking the user's tone, personality, and communication style as closely as possible. The goal is to provide highly personalized responses that feel authentic to the user.
+This project utilizes a large language model (LLM), specifically Meta's Llama 3.2, a 3B model provided by Ollama, to respond to messages that a user receives. The goal is to mimic the user's tone, personality, and communication style as closely as possible, providing highly personalized responses that feel authentic to the user.
 
 ## Approach
 The system works by utilizing several key components:
